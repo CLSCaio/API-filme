@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body {
+    gap: 10px;
+    background-color:rgb(56, 55, 65);
+    color: lavenderblush;
+    padding: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+    height: auto;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 515px) { body {
+    grid-template-rows: 50px 25px auto;
+    font-size: 1.4rem;
+}}
+
+body h1 {
+    color: darkcyan;
+}
+
+body span {
+    color: darksalmon;
+}
+
+@media (max-width: 400px) { span {
+    display: none;
+}}
+
+.procurar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (max-width: 515px) { .procurar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}}
+
+input {
+    height: 35px;
+    width: 200;
+    border: none;
+    border-radius: 45px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#button {
+    height: 35px;
+    width: 70px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 45px;
+    text-decoration: bold;
+}
+
+#button h1 {
+    font-size: 1rem;
+}
+
+@media (max-width: 515px) { #button {
+    height: 30px;
+}}
+
+#F_sobreM {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 250%;
+    width: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+}
+
+#F_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+
+.divSobre {
+    display: none;
+    position: fixed;
+}
+
+.div-img {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: double 9px lavenderblush;
+    box-shadow: 1px 1px 10px lavenderblush;
+
+    height: auto;
+    width: 500px;
+    gap: 10px;
+    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 550px) { .div-img {
+    width: 380px;
+} }
+
+.divSobre h1 {
+    font-size: 1.8rem;
+}
+
+.divSobre p {
+    font-size: 1.3rem;
+}
+
+#F_results {
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 0;
+}
+
+#N_pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button-page {
+    height: 50px;
+    width: 50px;
+    border: transparent;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: lavenderblush;
+}
+
+.filme_img {
+    height: 330px;
+    width: 230px;
+    border: solid 3px black;
+    border-radius: 10%;
+
+    border: double 6px lavenderblush;
+    border-radius: 40px;
+    box-shadow: 1px 1px 10px lavenderblush
+}
+
+.filme_img:hover {
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
