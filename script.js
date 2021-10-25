@@ -20,17 +20,6 @@ function start(filmes, page = 1) {
 // ATALHO PARA LIMPEZA
 let F_sobre = document.getElementById('F_sobre')
 
-// FUNÇAO BUSCA AO CLICK
-// let btn = document.getElementById('button')
-//   btn.onclick = (e) => {
-//   e.preventDefault()
-//   let filme = document.getElementById('valor_busca').value 
-//   start(filme)
-//   document.getElementById('valor_busca').innerHTML = ""
-//   // LIMPAR DADOS DE NAVEGAÇAO PARA GERAR NOVA
-//   F_sobre.innerHTML = ''
-// }
-
 // FUNÇAO BUSCA DINAMICA
 let filme = document.getElementById('valor_busca')
 filme.addEventListener('keyup', procurar)
@@ -110,7 +99,7 @@ function criarElem(results, pages, filmes) {
           divG = document.getElementById('F_sobreM')
           divG.style.display = 'block'
   
-          // CRIANDO FUNÇAO PARA SAIR PARA A HOME PAGE
+          // CRIANDO FUNÇAO PARA VOLTAR A HOME PAGE
           divG.addEventListener('click', (e) => {
             if(e.target.id == 'F_sobreM') {
               div_img = document.querySelector(`.div-img-${i}`)

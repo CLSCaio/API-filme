@@ -62,18 +62,6 @@ input {
     text-align: center;
 }
 
-#button {
-    height: 35px;
-    width: 70px;
-    cursor: pointer;
-    border: transparent;
-    border-radius: 45px;
-    text-decoration: bold;
-}
-
-#button h1 {
-    font-size: 1rem;
-}
 
 @media (max-width: 515px) { #button {
     height: 30px;
@@ -83,7 +71,7 @@ input {
     display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 250%;
+    height: 200%;
     width: calc(100% - 30px);
     top: 15px;
     left: 15px;
@@ -94,43 +82,56 @@ input {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 30%;
-}
-
-.divSobre {
-    display: none;
-    position: fixed;
+    top: 20%;
 }
 
 .div-img {
     display: none;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    max-width: 300px;
+    max-height: 600px;
+
+    flex-direction: column;
+
+    position: fixed;
+    overflow: auto;
 
     border: double 9px lavenderblush;
     box-shadow: 1px 1px 10px lavenderblush;
 
-    height: auto;
-    width: 500px;
     gap: 10px;
     z-index: 100;
 
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 550px) { .div-img {
-    width: 380px;
+
+
+@media (min-width: 550px) { .div-img {
+    max-width: 500px;
+    max-height: 600px;
 } }
 
+@media (min-width: 850px) { .div-img {
+    max-width: 800px;
+    max-height: 600px;
+} }
+
+
+
 .divSobre h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; 
+    padding: 20px 0 0 0;
 }
 
 .divSobre p {
     font-size: 1.3rem;
+    padding: 0px 5px;
 }
+
+.divSobre p:last-child {
+    padding: 0px 0px;
+}
+
 
 #F_results {
     box-sizing: content-box;
