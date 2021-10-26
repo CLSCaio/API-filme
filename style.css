@@ -21,12 +21,19 @@ body {
     align-items: center;
 }
 
+span{
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 @media (max-width: 515px) { body {
     grid-template-rows: 50px 25px auto;
     font-size: 1.4rem;
 }}
 
-header h1 {
+body h1 {
     background: linear-gradient(to right, #b92b27, #1565c0);
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -59,22 +59,28 @@ function criarElem(results, pages, filmes) {
     let divS = document.createElement('div')
     divS.className = `divSobre div-img div-img-${i}`
     // ADICIONANDO ELEMENTOS
-    let title = e.title
-    let over = `Resumo: ${e.overview}`
-    let date = `Data de lançamento: ${e.release_date}`
-    let pop = `Popularidade: ${e.popularity}`
+    let SpanResume = '<span> Resumo:  </span>'
     
-    let p = document.createElement('p')
-    p.innerHTML = over
+    let SpanLancamento = '<span> Resumo:  </span>'
 
-    let p2 = document.createElement('p')
-    p2.innerHTML = date
+    let SpanPopularidade = '<span> Popularidade:  </span>'
 
-    let p3 = document.createElement('p')
-    p3.innerHTML = pop
+    let title = e.title
+    let over = e.overview
+    let date = e.release_date
+    let pop = e.popularity
+    
+    let pOver = document.createElement('p')
+    pOver.innerHTML = `${SpanResume}${over}`
 
-    let h1 = document.createElement('h1')
-    h1.innerHTML = title
+    let pDate = document.createElement('p')
+    pDate.innerHTML = `${SpanLancamento}${date}`
+
+    let pPop = document.createElement('p')
+    pPop.innerHTML = `${SpanPopularidade}${pop}`
+
+    let h1Title = document.createElement('h1')
+    h1Title.innerHTML = title
 
     // CRIANDO ELEMENTO PARA OS FILMES
     let img = document.createElement('img')
@@ -113,7 +119,7 @@ function criarElem(results, pages, filmes) {
       }
 
     // ATRIBUINDO HERENÇA
-    divS.append(h1, p, p3, p2)
+    divS.append(h1Title, pOver, pPop, pDate)
     F_sobre.append(divS)
     F_results.append(img)
   } ) 
