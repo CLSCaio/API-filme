@@ -73,8 +73,8 @@ input {
     background-color: rgba(0, 0, 0, 0.7);
     height: 200%;
     width: calc(100% - 30px);
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
 }
 
 #F_sobre {
@@ -82,7 +82,7 @@ input {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 20%;
+    top: 25%;
 }
 
 .div-img {
