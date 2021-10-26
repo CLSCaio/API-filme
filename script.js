@@ -61,7 +61,7 @@ function criarElem(results, pages, filmes) {
     // ADICIONANDO ELEMENTOS
     let SpanResume = '<span> Resumo:  </span>'
     
-    let SpanLancamento = '<span> Resumo:  </span>'
+    let SpanLancamento = '<span> Lançamento:  </span>'
 
     let SpanPopularidade = '<span> Popularidade:  </span>'
 
